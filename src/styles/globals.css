@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 0255;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -25,17 +25,3 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
-/* @font-face {
-  font-family: "helvetica";
-  src: url("/src/fonts/helvetica/HelveticaNeue-Lt.woff"), format("woff");
-  font-weight: 300;
-
-  font-family: "helvetica";
-  src: url("/src/fonts/helvetica/HelveticaNeue-Roman.woff"), format("woff");
-  font-weight: 400;
-
-  font-family: "helvetica";
-  src: url("/src/fonts/helvetica/HelveticaNeue-Bd.woff"), format("woff");
-  font-weight: 600;
-} */
