@@ -2,29 +2,27 @@ import program from "@/data/ProgramData";
 
 interface Props {
   time: string;
-  desc?: string;
-  guest?: string;
+  desc?: string | Array<string>;
+  guest?: string | Array<string>;
 }
 interface ActualProps {
   items?: Props | Array<Props>;
 }
 
-export default function ProgramItem(props: Props) {
-  {
-    return program.map((programInfo) => {
-      const { time, desc, guest } = programInfo;
-      return (
-        <div>
-          <h3>{props.time}</h3>
-          <div className="">
-            <h3>{props.desc}</h3>
-            <h4 className="">{props.guest}</h4>
-          </div>
-        </div>
-      );
-    });
-  }
+function ProgramItem(props: Props) {
+  return program.map(() => {
+    // const { time, desc, guest } = props;
+    <div className="mb-10">
+      <h3>{props.time}</h3>
+      <div className="">
+        <h3 className="grid">{props.desc}</h3>
+        <h4 className="">{props.guest}</h4>
+      </div>
+    </div>;
+  });
 }
+
+export default ProgramItem;
 
 //         return
 //       })}
