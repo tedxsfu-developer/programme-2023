@@ -26,12 +26,18 @@ const helvetica = localFont({
 export default function Home() {
   return (
     <main
-      className={`flex flex-col min-h-screen justify-between p-3 text-white bg-black ${helvetica.className}`}
+      className={`flex flex-col justify-start whitespace-nowrap min-h-screen p-3 text-white bg-black ${helvetica.className}`}
     >
       <div className="flex justify-between mb-28">
         {" "}
         <h1 className="text-heading text-left font-light">Program</h1>
         <h1 className="text-heading text-left font-light">11/11</h1>
+      </div>
+      <div>
+        <h4 className="text-grey mb-2 uppercase text-sm font-normal">
+          Morning Session
+        </h4>
+        <hr className="border-1 py-2"></hr>
       </div>
 
       <div className="z-10 max-w-5xl w-full text-body font-normal lg:flex">
