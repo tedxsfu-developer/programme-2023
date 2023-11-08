@@ -1,7 +1,10 @@
 import Image from "next/image";
 import ProgramItem from "@/components/ProgramItem";
 import program from "@/data/ProgramData";
+import LunchActivity from "@/components/LunchActivity";
+import lunch from "@/data/LunchActivityData";
 import localFont from "next/font/local";
+import programAfternoon from "@/data/ProgramAfternoonData";
 
 const helvetica = localFont({
   src: [
@@ -26,7 +29,7 @@ const helvetica = localFont({
 export default function Home() {
   return (
     <main
-      className={`flex flex-col justify-start whitespace-nowrap min-h-screen p-3 text-white bg-black ${helvetica.className}`}
+      className={`min-h-screen p-3 text-white bg-black ${helvetica.className}`}
     >
       <div className="flex justify-between mb-28">
         {" "}
@@ -34,14 +37,46 @@ export default function Home() {
         <h1 className="text-heading text-left font-light">11/11</h1>
       </div>
       <div>
-        <h4 className="text-grey mb-2 uppercase text-sm font-normal">
-          Morning Session
-        </h4>
-        <hr className="border-1 py-2"></hr>
+        <h4 className="text-ted-grey pb-1.5">Morning Session</h4>
       </div>
 
       <div className="z-10 max-w-5xl w-full text-body font-normal lg:flex">
-        {program.map((items, index) => (
+        <div className="pb-10">
+          {program.map((items, index) => (
+            <ProgramItem
+              key={index}
+              time={items.time}
+              desc={items.desc}
+              guest={items.guest}
+            />
+          ))}
+        </div>
+        <div>
+          <h4 className="text-ted-grey pb-1.5">Lunch</h4>
+          <hr className=" border-ted-grey"></hr>
+        </div>
+        <div className="text-heading text-left font-light py-5">
+          13:00 - 15:00
+        </div>
+        <div className="text-body font-normal pb-8">
+          We’ve prepared a roster of activities for you during lunch hour to
+          spend.
+        </div>
+      </div>
+      <div>
+        {lunch.map((items, index) => (
+          <LunchActivity
+            key={index}
+            location={items.location}
+            desc={items.desc}
+          />
+        ))}
+      </div>
+      <div>
+        <div>
+          <h4 className="text-ted-grey pt-10 pb-1.5">Afternoon Session</h4>
+        </div>
+        {programAfternoon.map((items, index) => (
           <ProgramItem
             key={index}
             time={items.time}

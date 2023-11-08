@@ -19,6 +19,9 @@ const config: Config = {
       "4xl": "2.441rem",
       "5xl": "3.052rem",
     },
+    letterSpacing: {
+      wide: "1.26px",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -27,7 +30,7 @@ const config: Config = {
       },
 
       colors: {
-        grey: "#7D7D7D",
+        "ted-grey": "#7D7D7D",
       },
       margin: {
         "mb-28": "116px",

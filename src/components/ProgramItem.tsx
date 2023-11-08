@@ -8,13 +8,13 @@ function ProgramItem(items: Props) {
   const a = items.desc;
   return (
     // const { time, desc, guest } = props;
-    <div className="grid grid-cols-3 pb-1.5">
-      <h3>{items.time}</h3>
+    <div className="grid grid-cols-3 whitespace-nowrap py-1.5 border-ted-grey border-t">
+      <h3 className="text-ted-grey">{items.time}</h3>
       <div>
         {items.desc.map((e, index) => (
           <div className="">
             <div>{e}</div>
-            <div className="text-caption text-grey pb-1.5">
+            <div className="text-caption text-ted-grey pb-1.5">
               {items.guest ? items.guest[index] : <></>}
             </div>
           </div>
