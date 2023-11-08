@@ -1,25 +1,25 @@
-import program from "@/data/ProgramData";
-
 interface Props {
   time: string;
-  desc?: string | Array<string>;
-  guest?: string | Array<string>;
-}
-interface ActualProps {
-  items?: Props | Array<Props>;
+  desc: string[];
+  guest?: string[];
 }
 
-function ProgramItem(props: Props) {
-  return program.map(() => {
+function ProgramItem(items: Props) {
+  const a = items.desc;
+  return (
     // const { time, desc, guest } = props;
     <div className="mb-10">
-      <h3>{props.time}</h3>
-      <div className="">
-        <h3 className="grid">{props.desc}</h3>
-        <h4 className="">{props.guest}</h4>
+      <h3>{items.time}</h3>
+      <div>
+        {items.desc.map((e, index) => (
+          <div>
+            <div>{e}</div>
+            <div>{items.guest ? items.guest[index] : <></>}</div>
+          </div>
+        ))}
       </div>
-    </div>;
-  });
+    </div>
+  );
 }
 
 export default ProgramItem;

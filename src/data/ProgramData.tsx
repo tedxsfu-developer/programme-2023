@@ -1,8 +1,8 @@
 const program = [
   {
     time: "08:30",
-    desc: "Doors Open",
-    guest: "",
+    desc: ["Doors Open"],
+    guest: [""],
   },
   {
     time: "10:00",
