@@ -1,7 +1,7 @@
 import program from "@/data/ProgramData";
 
 interface Props {
-  time: string;
+  time?: string;
   desc?: string | Array<string>;
   guest?: string | Array<string>;
 }
@@ -10,16 +10,16 @@ interface ActualProps {
 }
 
 function ProgramItem(props: Props) {
-  return program.map(() => {
-    // const { time, desc, guest } = props;
-    <div className="mb-10">
-      <h3>{props.time}</h3>
+  const { time, desc, guest } = props;
+  return (
+    <div className="grid grid-cols-3 mb-10 w-full">
+      <h3>{time}</h3>
       <div className="">
-        <h3 className="grid">{props.desc}</h3>
-        <h4 className="">{props.guest}</h4>
+        <h3 className="">{desc}</h3>
+        <h4 className="">{guest}</h4>
       </div>
-    </div>;
-  });
+    </div>
+  );
 }
 
 export default ProgramItem;
