@@ -12,6 +12,7 @@ const config: Config = {
       sm: ["14px", "16px"],
       caption: "14px",
       body: ["16px", "17.28px"],
+      pagehead: "25px",
       heading: ["34px", "52.7px"],
       xl: "1.25rem",
       "2xl": "1.563rem",

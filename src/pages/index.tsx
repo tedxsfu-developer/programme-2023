@@ -5,6 +5,7 @@ import LunchActivity from "@/components/LunchActivity";
 import lunch from "@/data/LunchActivityData";
 import localFont from "next/font/local";
 import programAfternoon from "@/data/ProgramAfternoonData";
+import Honeyman from "./speakersInfo/Honeyman";
 import ReturnButton from "@/components/ReturnButton";
 
 const helvetica = localFont({
@@ -90,6 +91,9 @@ export default function Home() {
           />
         ))}
       </div>
+      {/* <div>
+        <Honeyman></Honeyman>
+      </div> */}
     </main>
   );
 }
