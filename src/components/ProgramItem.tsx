@@ -21,7 +21,22 @@ function ProgramItem(items: Props) {
         ))}
       </div>
       {/* for icon */}
-      <div></div>
+      <div className="translate-x-10">
+        <svg
+          width="10"
+          height="16"
+          viewBox="0 0 10 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M1.5 -3.49691e-07L9.5 8L1.5 16L0.499997 15L7.5 8L0.5 0.999998L1.5 -3.49691e-07Z"
+            fill="white"
+          />
+        </svg>
+      </div>
     </div>
   );
 }

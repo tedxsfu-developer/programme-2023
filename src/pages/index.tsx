@@ -5,6 +5,7 @@ import LunchActivity from "@/components/LunchActivity";
 import lunch from "@/data/LunchActivityData";
 import localFont from "next/font/local";
 import programAfternoon from "@/data/ProgramAfternoonData";
+import ReturnButton from "@/components/ReturnButton";
 
 const helvetica = localFont({
   src: [
@@ -41,6 +42,8 @@ export default function Home() {
       </div>
 
       <div className="z-10 max-w-5xl w-full text-body font-normal lg:flex">
+        <ReturnButton></ReturnButton>
+        {/* -----Morning Session section----- */}
         <div className="pb-10">
           {program.map((items, index) => (
             <ProgramItem
@@ -51,6 +54,7 @@ export default function Home() {
             />
           ))}
         </div>
+        {/* -----Lunch Activities section----- */}
         <div>
           <h4 className="text-ted-grey pb-1.5">Lunch</h4>
           <hr className=" border-ted-grey"></hr>
@@ -72,6 +76,7 @@ export default function Home() {
           />
         ))}
       </div>
+      {/* -----Afternoon Session section----- */}
       <div>
         <div>
           <h4 className="text-ted-grey pt-10 pb-1.5">Afternoon Session</h4>
