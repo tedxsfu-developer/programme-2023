@@ -51,6 +51,7 @@ export default function Home() {
               time={items.time}
               desc={items.desc}
               guest={items.guest}
+              href={items.href}
             />
           ))}
         </div>

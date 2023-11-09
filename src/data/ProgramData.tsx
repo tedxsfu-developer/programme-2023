@@ -38,6 +38,7 @@ const program = [
     time: "11:50",
     desc: ["Unmasking ADHD"],
     guest: ["Hayley Honeyman"],
+    href: "/speakers/hayley",
   },
   {
     time: "12:10",
