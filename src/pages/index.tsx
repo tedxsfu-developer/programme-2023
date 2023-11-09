@@ -1,10 +1,8 @@
 import Image from "next/image";
 import ProgramItem from "@/components/ProgramItem";
-import program from "@/data/ProgramData";
+import { program, programAfternoon, lunch } from "@/data/ProgramData";
 import LunchActivity from "@/components/LunchActivity";
-import lunch from "@/data/LunchActivityData";
 import localFont from "next/font/local";
-import programAfternoon from "@/data/ProgramAfternoonData";
 import ReturnButton from "@/components/ReturnButton";
 
 const helvetica = localFont({
@@ -41,7 +39,7 @@ export default function Home() {
         <h4 className="text-ted-grey pb-1.5">Morning Session</h4>
       </div>
 
-      <div className="z-10 max-w-5xl w-full text-body font-normal lg:flex">
+      <div className="z-10 max-w-5xl w-full text-body font-normal">
         <ReturnButton></ReturnButton>
         {/* -----Morning Session section----- */}
         <div className="pb-10">
