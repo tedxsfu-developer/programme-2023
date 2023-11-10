@@ -4,7 +4,7 @@ export const speakerData = [
     name: "Vladimir Kanic",
     href: "vladimir",
     desc: "Award-Winning Sculptor",
-    image: ["img/vladimir-headshot.png"],
+    image: "/speakers/vladimir-headshot.png",
     instagram: "https://www.instagram.com/vladdkanic/",
     links: "",
     info: [
@@ -55,7 +55,7 @@ export const speakerData = [
     name: "Sumaiya Tufail",
     href: "sumaiya",
     desc: "Slam Poet",
-    image: ["img/sumaiya-headshot.png"],
+    image: "/speakers/sumaiya-headshot.png",
     instagram: "https://www.instagram.com/sumaiyatufail/",
     links: "",
     info: [
@@ -106,7 +106,7 @@ export const speakerData = [
     name: "Hayley Honeyman",
     href: "hayley",
     desc: "ADHD Advocate",
-    image: "/img/hayley-headshot.png",
+    image: "/speakers/hayley-headshot.png",
     instagram: "https://www.instagram.com/hayley.honeyman/",
     links: "",
     info: [
@@ -152,7 +152,7 @@ export const speakerData = [
     name: "Parmida Beigi",
     href: "parmida",
     desc: "Amazon Senior AI Scientist",
-    image: "/img/hayley-headshot.png",
+    image: "/speakers/hayley-headshot.png",
     instagram: "https://www.instagram.com/hayley.honeyman/",
     links: "",
     info: [
@@ -198,7 +198,7 @@ export const speakerData = [
     name: "Janice Bannister",
     href: "janice",
     desc: "Vancouver's Comedy Mama",
-    image: "/img/janice-headshot.png",
+    image: "/speakers/janice-headshot.png",
     instagram: "",
     links: "https://www.laughterzone101.com/",
     info: [
@@ -231,7 +231,7 @@ export const speakerData = [
     name: "Tiara Cash",
     href: "tiara",
     desc: "Mindfulness Practitioner",
-    image: "/img/tiara-headshot.png",
+    image: "/speakers/tiara-headshot.png",
     instagram: "https://www.instagram.com/tiara_cash10/",
     links: "",
     info: [
@@ -266,7 +266,7 @@ export const speakerData = [
     name: "Chris Wilson",
     href: "chris",
     desc: "Career Coach",
-    image: ["img/hayley-headshot.png"],
+    image: ["speakers/hayley-headshot.png"],
     instagram: "https://www.instagram.com/iamchrismwilson/",
     links: "",
     info: [
@@ -310,7 +310,7 @@ export const speakerData = [
     name: "Micky Papa",
     href: "micky",
     desc: "Olympic Skateboarder",
-    image: "/img/micky-headshot.png",
+    image: "/speakers/micky-headshot.png",
     instagram: "https://www.instagram.com/micky_papa/",
     links: "",
     info: [

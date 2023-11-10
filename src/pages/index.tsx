@@ -5,6 +5,7 @@ import LunchActivity from "@/components/LunchActivity";
 import ProgramItem from "@/components/ProgramItem";
 import Link from "next/link";
 import ImageGrid from "@/components/ImageGrid";
+import Footer from "@/components/layout/Footer";
 
 const helvetica = localFont({
   src: [
@@ -95,7 +96,7 @@ export default function Home() {
         ))}
       </div>
       <div>
-        <ImageGrid></ImageGrid>
+        <Footer></Footer>
       </div>
     </main>
   );

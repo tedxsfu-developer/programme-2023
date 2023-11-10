@@ -13,7 +13,3 @@ function LunchActivity(items: Props) {
 }
 
 export default LunchActivity;
-
-// <h4>Lunch</h4>
-// <hr className="my-1.5"></hr>
-// <div

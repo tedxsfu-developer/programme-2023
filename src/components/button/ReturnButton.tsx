@@ -3,7 +3,7 @@ import Link from "next/link";
 function ReturnButton() {
   return (
     <nav className="flex">
-      <Link href="/" className="flex items-center">
+      <Link href="/" className="flex items-center pb-2">
         <svg
           viewBox="0 0 24 24"
           fill="none"

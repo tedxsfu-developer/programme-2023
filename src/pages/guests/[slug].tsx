@@ -9,17 +9,16 @@
 // import path from "path";
 
 import { usePathname } from "next/navigation";
-import { speakerData } from "@/data/SpeakerData";
+import { guestData } from "@/data/GuestsData";
 import InfoTab from "@/components/InfoTab";
 import ReturnButton from "@/components/button/ReturnButton";
 import Header from "@/components/layout/Header";
-import InstagramButton from "@/components/button/InstagramButton";
 import CTAButton from "@/components/button/CTAButton";
 import ImageLayout from "@/components/layout/ImageLayout";
 import { useState } from "react";
 
 export const getStaticPaths = async () => {
-  const paths = speakerData.map((items) => ({
+  const paths = guestData.map((items) => ({
     params: { slug: items.href.toString() },
   }));
   return {
@@ -31,14 +30,14 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   console.log("hey");
   console.log(params);
-  const speakers = speakerData.filter((p) => p.href.toString() === params.slug);
-  console.log(speakers);
+  const guests = guestData.filter((p) => p.href.toString() === params.slug);
+  console.log(guests);
   return {
     props: {
-      name: speakers[0].name,
-      href: speakers[0].href,
-      desc: speakers[0].desc,
-      info: speakers[0].info,
+      name: guests[0].name,
+      href: guests[0].href,
+      desc: guests[0].desc,
+      info: guests[0].info,
     },
   };
 };
