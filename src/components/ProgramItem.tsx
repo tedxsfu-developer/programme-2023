@@ -16,7 +16,7 @@ function ProgramItem(items: Props) {
     // >
     <Link href={items.href ? items.href : ""}>
       <div className="grid grid-cols-3 py-1.5 border-ted-grey border-t">
-        <h3 className="text-ted-grey">{items.time}</h3>
+        <h6 className="text-ted-grey">{items.time}</h6>
         <div className="flex flex-row col-span-2">
           <div className="flex flex-col">
             {items.desc.map((e, index) => (

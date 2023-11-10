@@ -7,9 +7,7 @@ interface Props {
 
 function SpeakerInfoLayout() {
   return (
-    <div className="grid grid-cols-3 py-1.5 border-ted-grey border-t">
-      <h3 className="text-ted-grey">Test</h3>
-    </div>
+    <div className="grid grid-cols-3 py-1.5 border-ted-grey border-t"></div>
   );
 }
 

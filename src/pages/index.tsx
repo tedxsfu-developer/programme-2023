@@ -2,24 +2,25 @@ import localFont from "next/font/local";
 import { program, programAfternoon, lunch } from "@/data/ProgramData";
 import Header from "@/components/layout/Header";
 import LunchActivity from "@/components/LunchActivity";
+import InfoTab from "@/components/InfoTab";
 import ProgramItem from "@/components/ProgramItem";
 
 const helvetica = localFont({
   src: [
     {
       path: "../fonts/helvetica/HelveticaNeue-Roman.woff",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../fonts/helvetica/HelveticaNeue-Lt.woff",
       weight: "300",
       style: "normal",
     },
     {
+      path: "../fonts/helvetica/HelveticaNeue-Lt.woff",
+      weight: "200",
+      style: "light",
+    },
+    {
       path: "../fonts/helvetica/HelveticaNeue-Bd.woff",
       weight: "700",
-      style: "normal",
+      style: "bold",
     },
   ],
 });
@@ -29,7 +30,8 @@ export default function Home() {
     <main
       className={`min-h-screen p-3 text-white bg-black ${helvetica.className}`}
     >
-      <Header></Header>
+      <Header />
+
       <div>
         <h4 className="text-ted-grey pb-1.5">Morning Session</h4>
       </div>
