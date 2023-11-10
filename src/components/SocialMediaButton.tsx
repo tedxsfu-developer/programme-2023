@@ -10,7 +10,7 @@ export default function SocialMediaButton(items: Props) {
     <div>
       <Link
         href={`${items.instagram}`}
-        className="bg-white rounded-full p-5 justify-center text-black font-sm uppercase"
+        className="flex flex-row bg-white rounded-full p-5 align-center justify-around text-black font-sm uppercase"
       >
         Instagram
       </Link>

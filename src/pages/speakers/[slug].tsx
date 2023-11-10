@@ -16,6 +16,8 @@ import ReturnButton from "@/components/ReturnButton";
 import SpeakerInfoLayout from "@/components/SpeakerInfoLayout";
 import Header from "@/components/layout/Header";
 import SocialMediaButton from "@/components/SocialMediaButton";
+import { useState } from "react";
+import { info } from "console";
 
 export const getStaticPaths = async () => {
   const paths = speakerData.map((items) => ({
@@ -47,6 +49,7 @@ export default function Page() {
   const speaker = speakerData.find(
     (p) => "/speakers/" + p.href.toString() === pathname
   );
+  const [tab, setTab] = useState("info");
 
   return (
     <main className=" min-h-screen bg-black text-white p-3">
@@ -69,16 +72,36 @@ export default function Page() {
         height={500}
         alt="Hayley Honeyman"
       />
-      <InfoTab />
+      <div className="flex space-x-3 border-b">
+        <button
+          onClick={(e) => {
+            setTab("info");
+          }}
+          className={` border-white ${
+            tab == "info" ? "border-b-2" : "border-none"
+          }`}
+        >
+          Info
+        </button>
+        <button
+          onClick={(e) => setTab("qa")}
+          className={` border-white ${
+            tab == "qa" ? "border-b-2" : "border-none"
+          }`}
+        >
+          Q&A
+        </button>
+      </div>
       <div className="font-light text-headline">
-        {speaker ? speaker.info[0] : ""}
-      </div>
-      <div className="font-normal text-body pt-2">
-        {speaker ? speaker.info[1] : ""}
-      </div>
+        {tab == "info" && <div>{speaker?.qa}
+        </div>
+
+  }
+
       <div className="mt-10">
         <SocialMediaButton instagram={speaker?.instagram}></SocialMediaButton>
       </div>
+      <div></div>
     </main>
   );
 }
