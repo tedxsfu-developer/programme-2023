@@ -96,13 +96,10 @@ export default function Page() {
         {tab == "info" && (
           <div>
             {speaker?.qa?.map((item, index) => (
-              <div>{item.question}</div>
-              {
-                item.answer.map((answer_item, index) => (
-                     <div>{item.answer}</div>
-                )
-                )
-              }
+              <>
+                <h4>{item.question}</h4>
+                <p>{item.answer}</p>
+              </>
             ))}
           </div>
         )}
