@@ -1,3 +1,4 @@
+"use client";
 import fs from "fs";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote";
@@ -10,87 +11,7 @@ import ReturnButton from "@/components/ReturnButton";
 import { speakerData } from "@/data/SpeakerData";
 import { postFilePaths, POSTS_PATH } from "@/utils/mdxUtils";
 import { usePathname } from "next/navigation";
-
-// Custom components/renderers to pass to MDX.
-// Since the MDX files aren't loaded by webpack, they have no knowledge of how
-// to handle import statements. Instead, you must include components in scope
-// here.
-const components = {
-  a: Link,
-  // It also works with dynamically-imported components, which is especially
-  // useful for conditionally loading components for certain routes.
-  // See the notes in README.md for more details.
-  Head,
-};
-
-export default function PostPage({ source, speakerData }) {
-  return (
-    <main className=" min-h-screen bg-black text-white p-3">
-      <header>
-        <nav>
-          <Link href="/" legacyBehavior>
-            <ReturnButton></ReturnButton>
-          </Link>
-        </nav>
-      </header>
-      <div className="post-header">
-        <h1 className="text-heading">{speakerData.title}</h1>
-        <h4 className="text-ted-grey uppercase text-caption">
-          {speakerData.desc}
-        </h4>
-        {speakerData.desc && <p className="info">{speakerData.info}</p>}
-      </div>
-      {/* <main>
-        <MDXRemote {...source} components={components} />
-      </main> */}
-
-      {/* styling for elements are HERE */}
-      <style jsx>{`
-        .post-header h1 {
-          margin-bottom: 0;
-        }
-
-        .post-header {
-          margin-bottom: 2rem;
-        }
-        .description {
-          opacity: 0.6;
-        }
-      `}</style>
-    </main>
-  );
-}
-
-export const getStaticProps = async () => {
-  const pathname = usePathname();
-  const speakers = speakerData.filter((p) => p.href.toString() === pathname);
-  return {
-    props: {
-      speaker: speakerData[0],
-    },
-  };
-  // CHANGE ME ON SLUG (line 62)
-  // const postFilePath = path.join(POSTS_PATH("speakers"), `${params.slug}.mdx`);
-  // const source = fs.readFileSync(postFilePath);
-
-  // const { content, data } = matter(source);
-
-  // const mdxSource = await serialize(content, {
-  //   // Optionally pass remark/rehype plugins
-  //   mdxOptions: {
-  //     remarkPlugins: [],
-  //     rehypePlugins: [],
-  //   },
-  //   scope: data,
-  // });
-
-  // return {
-  //   props: {
-  //     source: mdxSource,
-  //     frontMatter: data,
-  //   },
-  // };
-};
+import type { InferGetStaticPropsType, GetStaticProps } from "next";
 
 export const getStaticPaths = async () => {
   const paths = speakerData.map((items) => ({
@@ -100,15 +21,36 @@ export const getStaticPaths = async () => {
     paths,
     fallback: false,
   };
-  // // CHANGE ME ON SLUG (line 86)
-  // const paths = postFilePaths("speakers")
-  //   // Remove file extensions for page paths
-  //   .map((path) => path.replace(/\.mdx?$/, ""))
-  //   // Map the path into the static paths object required by Next.js
-  //   .map((slug) => ({ params: { slug } }));
-
-  // return {
-  //   paths,
-  //   fallback: false,
-  // };
 };
+
+export const getStaticProps = async ({ params }) => {
+  console.log("hey");
+  console.log(params);
+  const speakers = speakerData.filter((p) => p.href.toString() === params.slug);
+  console.log(speakers);
+  return {
+    props: {
+      name: speakers[0].name,
+      href: speakers[0].href,
+      desc: speakers[0].desc,
+      info: speakers[0].info,
+    },
+  };
+};
+
+export default function Page() {
+  const pathname = usePathname();
+  const speaker = speakerData.find(
+    (p) => "/speakers/" + p.href.toString() === pathname
+  );
+
+  return (
+    <main className=" min-h-screen bg-black text-white p-3">
+      <div>{pathname}</div>
+      <div>{speaker ? speaker.name : ""}</div>
+      <div>{speaker ? speaker.href : ""}</div>
+      <div>{speaker ? speaker.desc : ""}</div>
+      <div>{speaker ? speaker.info : ""}</div>
+    </main>
+  );
+}
