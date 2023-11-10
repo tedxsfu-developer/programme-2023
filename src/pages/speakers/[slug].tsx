@@ -9,6 +9,7 @@ import path from "path";
 import ReturnButton from "@/components/ReturnButton";
 import { speakerData } from "@/data/SpeakerData";
 import { postFilePaths, POSTS_PATH } from "@/utils/mdxUtils";
+import { usePathname } from "next/navigation";
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -60,8 +61,9 @@ export default function PostPage({ source, speakerData }) {
   );
 }
 
-export const getStaticProps = async ({ params }) => {
-  const speakers = speakerData.filter((p) => p.slug.toString() === params.slug);
+export const getStaticProps = async () => {
+  const pathname = usePathname();
+  const speakers = speakerData.filter((p) => p.href.toString() === pathname);
   return {
     props: {
       speaker: speakerData[0],
@@ -92,7 +94,7 @@ export const getStaticProps = async ({ params }) => {
 
 export const getStaticPaths = async () => {
   const paths = speakerData.map((items) => ({
-    params: { slug: items.slug.toString() },
+    params: { slug: items.href.toString() },
   }));
   return {
     paths,

@@ -14,12 +14,7 @@ function ProgramItem(items: Props) {
     //   href={items.href || ""}
     //   className={`${items.href ? "" : "pointer-events-none"}`}
     // >
-    <Link
-      href={{
-        pathname: "/speakers/[slug]",
-        query: { slug: items.slug },
-      }}
-    >
+    <Link href={items.href ? items.href : ""}>
       <div className="grid grid-cols-3 py-1.5 border-ted-grey border-t">
         <h3 className="text-ted-grey">{items.time}</h3>
         <div className="flex flex-row col-span-2">
