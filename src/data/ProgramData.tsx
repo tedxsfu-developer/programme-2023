@@ -25,7 +25,7 @@ export const program = [
     time: "11:00",
     desc: ["Remembrance Day"],
     guest: ["Honour House Society"],
-    href: "/guests/hhs",
+    href: "/guests/honourhousessociety",
   },
   {
     time: "11:20",
@@ -37,7 +37,7 @@ export const program = [
     time: "11:40",
     desc: ["Laughter Yoga"],
     guest: ["Ven Virah"],
-    href: "/guests/ven",
+    href: "/guests/laughteryoga",
   },
   {
     time: "11:50",

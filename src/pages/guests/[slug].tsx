@@ -8,6 +8,9 @@
 // import Link from "next/link";
 // import path from "path";
 
+import { motion, AnimatePresence } from "framer-motion";
+import Carousel from "./Carousel";
+import GuestImageCarousel from "@/components/GuestImageCarousel";
 import { usePathname } from "next/navigation";
 import { guestData } from "@/data/GuestsData";
 import InfoTab from "@/components/InfoTab";
@@ -48,6 +51,7 @@ export default function Page() {
     (p) => "/guests/" + p.href.toString() === pathname
   );
   const [tab, setTab] = useState("info");
+  const images = guest?.image;
 
   return (
     <main className=" min-h-screen bg-black text-white p-3 overflow-auto">
@@ -62,7 +66,7 @@ export default function Page() {
           {guest ? guest.desc : ""}
         </div>
       </div>
-      <ImageLayout image={guest ? guest.image : ""} />
+      <Carousel images={images} />
 
       <GuestInfoTab />
 
