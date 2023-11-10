@@ -2,7 +2,12 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div>
-      <div className="grid grid-cols-3 items-center">
+      <div className="pt-5">
+        <h4 className="inline uppercase text-white font-sm">
+          Our Sponsors & Partners
+        </h4>
+      </div>
+      <div className="grid grid-cols-3 items-center pt-5">
         <Image
           src="/logo/sfu-logo.png"
           width={113}
@@ -69,7 +74,7 @@ export default function Footer() {
           className="justify-self-center my-2"
         ></Image>
       </div>
-      <div className="grid grid-cols-2 items-center">
+      <div className="grid grid-cols-2 items-center pb-10">
         <Image
           src="/logo/paragontea-logo.png"
           width={97}

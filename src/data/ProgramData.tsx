@@ -13,7 +13,7 @@ export const program = [
   {
     time: "10:20",
     desc: ["Welcome to TEDxSFU"],
-    guest: ["Executive Producers"],
+    guest: [""],
   },
   {
     time: "10:40",
@@ -78,11 +78,11 @@ export const programAfternoon = [
     guest: ["Tiara Cash"],
     href: "/speakers/tiara",
   },
-  {
-    time: "16:00",
-    desc: ["Performance 4"],
-    guest: ["TBD"],
-  },
+  // {
+  //   time: "16:00",
+  //   desc: ["Performance 4"],
+  //   guest: ["TBD"],
+  // },
   {
     time: "16:20",
     desc: ["Life Beyond the Dead Man's Curve"],

@@ -7,36 +7,34 @@ import Link from "next/link";
 import ImageGrid from "@/components/ImageGrid";
 import Footer from "@/components/layout/Footer";
 
-const helvetica = localFont({
-  src: [
-    {
-      path: "../fonts/helvetica/HelveticaNeue-Lt.woff",
-      weight: "200",
-      style: "light",
-    },
-    {
-      path: "../fonts/helvetica/HelveticaNeue-Roman.woff",
-      weight: "300",
-      style: "normal",
-    },
-    // {
-    //   path: "../fonts/helvetica/HelveticaNeue-Md.woff",
-    //   weight: "400",
-    //   style: "medium",
-    // },
-    {
-      path: "../fonts/helvetica/HelveticaNeue-Bd.woff",
-      weight: "700",
-      style: "bold",
-    },
-  ],
-});
+// const helvetica = localFont({
+//   src: [
+//     {
+//       path: "../fonts/helvetica/HelveticaNeue-Lt.woff",
+//       weight: "200",
+//       style: "light",
+//     },
+//     {
+//       path: "../fonts/helvetica/HelveticaNeue-Roman.woff",
+//       weight: "300",
+//       style: "normal",
+//     },
+//     // {
+//     //   path: "../fonts/helvetica/HelveticaNeue-Md.woff",
+//     //   weight: "400",
+//     //   style: "medium",
+//     // },
+//     {
+//       path: "../fonts/helvetica/HelveticaNeue-Bd.woff",
+//       weight: "700",
+//       style: "bold",
+//     },
+//   ],
+// });
 
 export default function Home() {
   return (
-    <main
-      className={`min-h-screen p-3 text-white bg-black ${helvetica.className}`}
-    >
+    <main className={`min-h-screen p-3 text-white bg-black`}>
       <Header />
       <Link href="/faq">FAQ</Link>
 
@@ -95,6 +93,9 @@ export default function Home() {
           />
         ))}
       </div>
+      <h4 className="tracking-normal normal-case text-ted-grey font-sm">
+        *Schedule subject to change
+      </h4>
       <div>
         <Footer></Footer>
       </div>

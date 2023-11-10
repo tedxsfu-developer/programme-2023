@@ -152,8 +152,8 @@ export const speakerData = [
     name: "Parmida Beigi",
     href: "parmida",
     desc: "Amazon Senior AI Scientist",
-    image: "/speakers/hayley-headshot.png",
-    instagram: "https://www.instagram.com/hayley.honeyman/",
+    image: "/speakers/parmida-headshot.png",
+    instagram: "https://www.instagram.com/bigdataqueen/",
     links: "",
     info: [
       {
@@ -266,16 +266,16 @@ export const speakerData = [
     name: "Chris Wilson",
     href: "chris",
     desc: "Career Coach",
-    image: ["speakers/hayley-headshot.png"],
+    image: "/speakers/chris-headshot.png",
     instagram: "https://www.instagram.com/iamchrismwilson/",
     links: "",
     info: [
-      [
-        // HEADLINE
-        "A former Helicopter Pilot and Aircraft Maintenance Engineer, has always had a taste for adventure and a drive to make a difference. With two published books and a past in competitive fitness, he's no stranger to pushing boundaries.",
-        // PARA-1
-        "Today, Chris has transitioned his passion into a Career Coaching business. His mission is to guide and empower young professionals through career transitions and changes, helping them discover pathways that not only ignite their joy but also create a lasting impact. A dedicated Mentor in the Entrepreneurship program at the University of British Columbia, Chris shares his insights and experiences to inspire the next generation of innovators and leaders. Outside work, you'll find Chris exploring the world through travel, carving down snowy slopes on a snowboard, or delving into the ocean's depths while scuba diving. With a soft spot for pizza, a keen appreciation for good coffee, and an unwavering commitment to quality time spent with loved ones. Chris Wilson is not just an adventurer; he's a catalyst for meaningful work and a source of inspiration for those seeking to make their mark on the world.",
-      ],
+      {
+        headline:
+          "A former Helicopter Pilot and Aircraft Maintenance Engineer, has always had a taste for adventure and a drive to make a difference. With two published books and a past in competitive fitness, he's no stranger to pushing boundaries.",
+
+        body: "Today, Chris has transitioned his passion into a Career Coaching business. His mission is to guide and empower young professionals through career transitions and changes, helping them discover pathways that not only ignite their joy but also create a lasting impact. A dedicated Mentor in the Entrepreneurship program at the University of British Columbia, Chris shares his insights and experiences to inspire the next generation of innovators and leaders. Outside work, you'll find Chris exploring the world through travel, carving down snowy slopes on a snowboard, or delving into the ocean's depths while scuba diving. With a soft spot for pizza, a keen appreciation for good coffee, and an unwavering commitment to quality time spent with loved ones. Chris Wilson is not just an adventurer; he's a catalyst for meaningful work and a source of inspiration for those seeking to make their mark on the world.",
+      },
     ],
     qa: [
       {
