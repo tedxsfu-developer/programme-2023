@@ -1,17 +1,15 @@
 "use client";
-import fs from "fs";
-import matter from "gray-matter";
-import { MDXRemote } from "next-mdx-remote";
-import { serialize } from "next-mdx-remote/serialize";
-import dynamic from "next/dynamic";
-import Head from "next/head";
-import Link from "next/link";
-import path from "path";
-import ReturnButton from "@/components/ReturnButton";
+// import fs from "fs";
+// import matter from "gray-matter";
+// import { MDXRemote } from "next-mdx-remote";
+// import { serialize } from "next-mdx-remote/serialize";
+// import dynamic from "next/dynamic";
+// import Head from "next/head";
+// import Link from "next/link";
+// import path from "path";
 import { speakerData } from "@/data/SpeakerData";
-import { postFilePaths, POSTS_PATH } from "@/utils/mdxUtils";
 import { usePathname } from "next/navigation";
-import type { InferGetStaticPropsType, GetStaticProps } from "next";
+import SpeakerInfoLayout from "@/components/SpeakerInfoLayout";
 
 export const getStaticPaths = async () => {
   const paths = speakerData.map((items) => ({

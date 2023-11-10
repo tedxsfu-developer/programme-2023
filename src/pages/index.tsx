@@ -3,8 +3,6 @@ import { program, programAfternoon, lunch } from "@/data/ProgramData";
 import Header from "@/components/layout/Header";
 import LunchActivity from "@/components/LunchActivity";
 import ProgramItem from "@/components/ProgramItem";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
 
 const helvetica = localFont({
   src: [

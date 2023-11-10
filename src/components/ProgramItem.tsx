@@ -45,7 +45,6 @@ function ProgramItem(items: Props) {
             </svg>
           </div>
         </div>
-        {/* for icon */}
       </div>
     </Link>
   );
