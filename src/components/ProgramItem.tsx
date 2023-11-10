@@ -18,7 +18,7 @@ function ProgramItem(items: Props) {
       href={items.href ? items.href : ""}
       className={items.href ? "" : "pointer-events-none"}
     >
-      <div className="grid grid-cols-3 py-1.5 border-ted-grey border-t">
+      <div className="grid grid-cols-3 py-1.5 font-normal border-ted-grey border-t">
         <h6 className="text-ted-grey">{items.time}</h6>
         <div className="flex flex-row col-span-2">
           <div className="flex flex-col">

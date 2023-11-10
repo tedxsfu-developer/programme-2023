@@ -5,12 +5,13 @@ interface Props {
   instagram: string;
 }
 
-export default function SocialMediaButton(items: Props) {
+export default function InstagramButton(items: Props) {
   return (
     <div>
       <Link
         href={`${items.instagram}`}
-        className="flex flex-row bg-white rounded-full p-5 align-center justify-around text-black font-sm uppercase"
+        className={`bg-white rounded-[30px] px-5 py-2 align-center justify-around text-black 
+        text-sm tracking-wide uppercase ${items.instagram ? "" : "hidden"}`}
       >
         Instagram
       </Link>

@@ -39,3 +39,9 @@ h3 {
   font-size: 25px;
   font-weight: light;
 }
+
+question {
+  text-transform: none;
+  font-style: bold;
+  font-size: 14px;
+}
