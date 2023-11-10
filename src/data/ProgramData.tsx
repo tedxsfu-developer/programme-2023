@@ -38,7 +38,7 @@ export const program = [
     time: "11:50",
     desc: ["Unmasking ADHD"],
     guest: ["Hayley Honeyman"],
-    href: "/speakers/hayley",
+    href: "/speakers/honeyman",
   },
   {
     time: "12:10",
@@ -67,6 +67,7 @@ export const programAfternoon = [
     time: "15:40",
     desc: ["Mindfulness is for Everyone"],
     guest: ["Tiara Cash"],
+    href: "/speakers/cash",
   },
   {
     time: "16:00",

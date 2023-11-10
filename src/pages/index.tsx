@@ -1,9 +1,9 @@
-import Image from "next/image";
-import ProgramItem from "@/components/ProgramItem";
-import { program, programAfternoon, lunch } from "@/data/ProgramData";
-import LunchActivity from "@/components/LunchActivity";
 import localFont from "next/font/local";
-import ReturnButton from "@/components/ReturnButton";
+import { program, programAfternoon, lunch } from "@/data/ProgramData";
+import Header from "@/components/layout/Header";
+import LunchActivity from "@/components/LunchActivity";
+import ProgramItem from "@/components/ProgramItem";
+import Link from "next/link";
 
 const helvetica = localFont({
   src: [
@@ -30,18 +30,14 @@ export default function Home() {
     <main
       className={`min-h-screen p-3 text-white bg-black ${helvetica.className}`}
     >
-      <div className="flex justify-between mb-28">
-        {" "}
-        <h1 className="text-heading text-left font-light">Program</h1>
-        <h1 className="text-heading text-left font-light">11/11</h1>
-      </div>
+      <Header></Header>
       <div>
         <h4 className="text-ted-grey pb-1.5">Morning Session</h4>
       </div>
 
       <div className="z-10 max-w-5xl w-full text-body font-normal">
-        <ReturnButton></ReturnButton>
         {/* -----Morning Session section----- */}
+
         <div className="pb-10">
           {program.map((items, index) => (
             <ProgramItem
@@ -89,9 +85,6 @@ export default function Home() {
           />
         ))}
       </div>
-      {/* <div>
-        <Honeyman></Honeyman>
-      </div> */}
     </main>
   );
 }

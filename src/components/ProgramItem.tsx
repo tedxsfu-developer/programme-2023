@@ -8,12 +8,17 @@ interface Props {
 }
 
 function ProgramItem(items: Props) {
-  const a = items.desc;
   return (
     // const { time, desc, guest } = props;
+    // <Link
+    //   href={items.href || ""}
+    //   className={`${items.href ? "" : "pointer-events-none"}`}
+    // >
     <Link
-      href={items.href || ""}
-      className={`${items.href ? "" : "pointer-events-none"}`}
+      href={{
+        pathname: "/speakers/[slug]",
+        query: { slug: items.slug },
+      }}
     >
       <div className="grid grid-cols-3 py-1.5 border-ted-grey border-t">
         <h3 className="text-ted-grey">{items.time}</h3>

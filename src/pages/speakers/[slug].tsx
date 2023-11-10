@@ -6,7 +6,8 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import Link from "next/link";
 import path from "path";
-
+import ReturnButton from "@/components/ReturnButton";
+import { speakerData } from "@/data/SpeakerData";
 import { postFilePaths, POSTS_PATH } from "@/utils/mdxUtils";
 
 // Custom components/renderers to pass to MDX.
@@ -21,26 +22,28 @@ const components = {
   Head,
 };
 
-export default function PostPage({ source, frontMatter }) {
+export default function PostPage({ source, speakerData }) {
   return (
-    <main>
+    <main className=" min-h-screen bg-black text-white p-3">
       <header>
         <nav>
           <Link href="/" legacyBehavior>
-            <a>👈 Go back home</a>
+            <ReturnButton></ReturnButton>
           </Link>
         </nav>
       </header>
       <div className="post-header">
-        <h1>{frontMatter.title}</h1>
-        {frontMatter.description && (
-          <p className="description">{frontMatter.description}</p>
-        )}
+        <h1 className="text-heading">{speakerData.title}</h1>
+        <h4 className="text-ted-grey uppercase text-caption">
+          {speakerData.desc}
+        </h4>
+        {speakerData.desc && <p className="info">{speakerData.info}</p>}
       </div>
-      <main>
+      {/* <main>
         <MDXRemote {...source} components={components} />
-      </main>
+      </main> */}
 
+      {/* styling for elements are HERE */}
       <style jsx>{`
         .post-header h1 {
           margin-bottom: 0;
@@ -58,39 +61,52 @@ export default function PostPage({ source, frontMatter }) {
 }
 
 export const getStaticProps = async ({ params }) => {
-  // CHANGE ME ON SLUG (line 62)
-  const postFilePath = path.join(POSTS_PATH("speakers"), `${params.slug}.mdx`);
-  const source = fs.readFileSync(postFilePath);
-
-  const { content, data } = matter(source);
-
-  const mdxSource = await serialize(content, {
-    // Optionally pass remark/rehype plugins
-    mdxOptions: {
-      remarkPlugins: [],
-      rehypePlugins: [],
-    },
-    scope: data,
-  });
-
+  const speakers = speakerData.filter((p) => p.slug.toString() === params.slug);
   return {
     props: {
-      source: mdxSource,
-      frontMatter: data,
+      speaker: speakerData[0],
     },
   };
+  // CHANGE ME ON SLUG (line 62)
+  // const postFilePath = path.join(POSTS_PATH("speakers"), `${params.slug}.mdx`);
+  // const source = fs.readFileSync(postFilePath);
+
+  // const { content, data } = matter(source);
+
+  // const mdxSource = await serialize(content, {
+  //   // Optionally pass remark/rehype plugins
+  //   mdxOptions: {
+  //     remarkPlugins: [],
+  //     rehypePlugins: [],
+  //   },
+  //   scope: data,
+  // });
+
+  // return {
+  //   props: {
+  //     source: mdxSource,
+  //     frontMatter: data,
+  //   },
+  // };
 };
 
 export const getStaticPaths = async () => {
-  // CHANGE ME ON SLUG (line 86)
-  const paths = postFilePaths("speakers")
-    // Remove file extensions for page paths
-    .map((path) => path.replace(/\.mdx?$/, ""))
-    // Map the path into the static paths object required by Next.js
-    .map((slug) => ({ params: { slug } }));
-
+  const paths = speakerData.map((items) => ({
+    params: { slug: items.slug.toString() },
+  }));
   return {
     paths,
     fallback: false,
   };
+  // // CHANGE ME ON SLUG (line 86)
+  // const paths = postFilePaths("speakers")
+  //   // Remove file extensions for page paths
+  //   .map((path) => path.replace(/\.mdx?$/, ""))
+  //   // Map the path into the static paths object required by Next.js
+  //   .map((slug) => ({ params: { slug } }));
+
+  // return {
+  //   paths,
+  //   fallback: false,
+  // };
 };
