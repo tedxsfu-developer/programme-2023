@@ -56,7 +56,7 @@ export default function Home() {
           <hr className=" border-ted-grey"></hr>
         </div>
         <div className="text-heading text-left font-light py-5">
-          13:00 - 15:00
+          13:00 &ndash; 15:00
         </div>
         <div className="text-body font-normal pb-8">
           We’ve prepared a roster of activities for you during lunch hour to

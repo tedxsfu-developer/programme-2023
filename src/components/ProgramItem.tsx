@@ -14,7 +14,10 @@ function ProgramItem(items: Props) {
     //   href={items.href || ""}
     //   className={`${items.href ? "" : "pointer-events-none"}`}
     // >
-    <Link href={items.href ? items.href : ""}>
+    <Link
+      href={items.href ? items.href : ""}
+      className={items.href ? "" : "pointer-events-none"}
+    >
       <div className="grid grid-cols-3 py-1.5 border-ted-grey border-t">
         <h6 className="text-ted-grey">{items.time}</h6>
         <div className="flex flex-row col-span-2">
@@ -35,6 +38,7 @@ function ProgramItem(items: Props) {
               viewBox="0 0 10 16"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className={items.href ? "" : "hidden"}
             >
               <path
                 fill-rule="evenodd"
