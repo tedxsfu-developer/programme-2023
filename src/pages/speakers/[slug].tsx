@@ -93,11 +93,20 @@ export default function Page() {
         </button>
       </div>
       <div className="font-light text-headline">
-        {tab == "info" && <div>{speaker?.qa}
-        </div>
-
-  }
-
+        {tab == "info" && (
+          <div>
+            {speaker?.qa?.map((item, index) => (
+              <div>{item.question}</div>
+              {
+                item.answer.map((answer_item, index) => (
+                     <div>{item.answer}</div>
+                )
+                )
+              }
+            ))}
+          </div>
+        )}
+      </div>
       <div className="mt-10">
         <SocialMediaButton instagram={speaker?.instagram}></SocialMediaButton>
       </div>
