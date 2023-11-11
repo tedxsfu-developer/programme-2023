@@ -29,6 +29,7 @@ export const getStaticPaths = async () => {
   };
 };
 
+// @ts-ignore
 export const getStaticProps = async ({ params }) => {
   console.log("hey");
   console.log(params);
@@ -56,18 +57,20 @@ export default function Page() {
       <Header />
       <ReturnButton />
 
-      <div className="grid grid-flow-col z-10 w-full justify-between items-center border-b pb-2 border-ted-grey">
-        <div className="font-light text-name">
-          {speaker ? speaker.name : ""}
-        </div>
-        <div className="text-sm text-ted-grey capitalize font-normal">
-          {speaker ? speaker.desc : ""}
-        </div>
-      </div>
-      <ImageLayout image={speaker ? speaker.image : ""} />
+      {speaker && (
+        <>
+          <div className="grid grid-flow-col z-10 w-full justify-between items-center border-b pb-2 border-ted-grey">
+            <div className="font-light text-name">{speaker.name}</div>
+            <div className="text-sm text-ted-grey capitalize font-normal">
+              {speaker.desc}
+            </div>
+          </div>
+          <ImageLayout image={speaker.image} name={speaker?.name} />
 
-      <InfoTab />
-      <Footer></Footer>
+          <InfoTab />
+          <Footer></Footer>
+        </>
+      )}
 
       <div></div>
     </main>

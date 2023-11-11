@@ -2,19 +2,28 @@ import Image from "next/image";
 import { sponsors } from "@/data/Sponsors";
 
 interface Props {
-  src: string;
-  alt: string;
+  // src: string;
+  // alt: string;
 }
 
 export default function Sponsors(items: Props) {
   return (
-    <div className="flex flex-col pt-5 items-center">
-      {sponsors.map((e, index) => (
-        <div className="justify-self-center my-2">
-          <Image src={items.src} alt={items.alt}></Image>
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="pt-24 text-name mb-8">
+        Give a round of applause to our partners
+      </div>
+      <div className="grid grid-cols-3 pb-24 gap-4 items-center">
+        {sponsors.map((e, index) => (
+          <div
+            className={`justify-self-center my-2 p-4 ${
+              index === sponsors.length - 1 && "col-span-3"
+            }`}
+          >
+            <Image src={e.src} alt={e.alt} width={100} height={100}></Image>
+          </div>
+        ))}
+      </div>
+    </>
 
     // <div>
     //   {/* <div className="pt-5"></div> */}
@@ -22,7 +31,6 @@ export default function Sponsors(items: Props) {
     //     <Image
     //       src="/logo/deltahotels-logo.png"
     //       width={57.46}
-    //       height={71}
     //       alt="Delta Hotels"
     //       className="justify-self-center my-2"
     //     ></Image>

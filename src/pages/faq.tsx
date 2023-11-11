@@ -1,9 +1,9 @@
 import Header from "@/components/layout/Header";
 import Link from "next/link";
 import localFont from "next/font/local";
-import Collapsible from "react-collapsible";
 import ReturnButton from "@/components/button/ReturnButton";
 import { useState } from "react";
+import Collapsible from "@/components/Collapsible";
 
 const helvetica = localFont({
   src: [
@@ -45,45 +45,49 @@ export default function FAQ() {
       <ReturnButton></ReturnButton>
       <div>
         <div className="py-1">
-          <Collapsible
-            trigger="Where is The Centre for Performing Arts located?"
-            easing="step-end"
-            className="pb-2 border-b font-normal text-body"
-          >
+          <Collapsible trigger="Can I bring food and drinks into the venue?">
             <p>
-              The Centre for Performing Arts is situated at 777 Homer St,
-              Downtown Vancouver, BC making it easily accessible in the heart of
-              the city.
-              <br></br>
-              <strong>From Waterfront Station:</strong>
-              <br></br>
-              The Centre is a short 13-minute walk from Waterfront station. The
-              Centre also has accessible express service via Translink bus
-              routes 007, 010, 014, 016, 050 or the Canada Line Skytrain.
-              <br></br>
-              The venue can be accessed via doors on Homer St. in front of the
-              Vancouver Public Library: The Centre For Performing Arts.
-              <br></br>
-              The majority of our event takes place on the second floor of the
-              Centre, with access to the theatre via the third floor as well.
+              Outside food and drinks are not allowed. However, refreshments
+              will be available.
             </p>
           </Collapsible>
         </div>
         <div className="py-1">
-          <Collapsible
-            trigger="Is there parking available at the venue?"
-            easing="step-end"
-            className="font-normal text-body pb-2 border-b"
-          >
+          <Collapsible trigger="Is there an intermission during the conference?">
+            <p>
+              Yes, there will be a designated intermission for you to stretch
+              your legs and network with fellow attendees.
+            </p>
+          </Collapsible>
+        </div>
+        <div className="py-1">
+          <Collapsible trigger="Are photography and recording allowed during the talks?">
+            <p>
+              Photography and recording are not allowed during the speakers'
+              talks. However, official event photographers will capture key
+              moments.
+            </p>
+          </Collapsible>
+        </div>
+        <div className="py-1">
+          <Collapsible trigger="Is there a coat check available at the venue?">
+            <p>
+              Coat check service will not be available. Please have all your
+              belongings with you.
+            </p>
+          </Collapsible>
+        </div>
+        <div className="py-1">
+          <Collapsible trigger="Is there parking available at the venue?">
             <p>
               Limited parking is available near The Centre for Performing Arts.
               We recommend using public transportation, rideshare services, or
               carpooling!
               <br></br>Parking is available at: <br></br>
-              {/* <ul>
+              <ul>
                 <li>L'Hermitage (Impark Lot #2263)</li>
                 <li>Telus Garden (Advanced Parking Lot #9160)</li>
-              </ul> */}
+              </ul>
             </p>
           </Collapsible>
         </div>

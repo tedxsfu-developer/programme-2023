@@ -11,7 +11,7 @@ const config: Config = {
     fontSize: {
       sm: ["14px", "16px"],
       caption: "14px",
-      body: ["16px", "17.28px"],
+      body: ["16px", "20px"],
       name: ["25px", "27px"],
       headline: ["19px", "20.52px"],
       heading: ["34px", "52.7px"],

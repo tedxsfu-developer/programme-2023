@@ -36,7 +36,14 @@ export default function Home() {
   return (
     <main className={`min-h-screen p-3 text-white bg-black`}>
       <Header />
-      <Link href="/faq">FAQ</Link>
+      <div className="fixed bottom-6 right-0">
+        <Link
+          href="/faq"
+          className="mb-0 mr-4 bg-white text-black px-2 py-2 rounded-md"
+        >
+          FAQ
+        </Link>
+      </div>
 
       <div>
         <h4 className="text-ted-grey pb-1.5">Morning Session</h4>
