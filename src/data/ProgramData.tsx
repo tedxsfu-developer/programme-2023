@@ -97,16 +97,11 @@ export const programAfternoon = [
   },
   {
     time: "17:00",
-    desc: ["Let Us Know You're Here!"],
-    guest: [""],
-  },
-  {
-    time: "17:20",
     desc: ["A Toast to Ideas Worth Spreading"],
     guest: ["Noel Bentley"],
   },
   {
-    time: "18:00",
+    time: "17:30",
     desc: ["End of Program"],
     guest: [""],
   },
