@@ -67,7 +67,7 @@ export default function Home() {
         *Schedule subject to change
       </h4>
       {/* <Sponsors></Sponsors> */}
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </main>
   );
 }
