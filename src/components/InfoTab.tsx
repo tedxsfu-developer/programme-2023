@@ -45,7 +45,6 @@ export default function InfoTab() {
                   {item.headline}
                 </h3>
                 <p className="pt-2 text-body font-normal">{item.body}</p>
-                <p className="pt-3 text-body font-normal">{item.body2}</p>
                 <div className="my-[30px]">
                   <InstagramButton
                     instagram={speaker?.instagram}
