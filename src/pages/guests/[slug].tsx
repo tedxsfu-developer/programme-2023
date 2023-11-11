@@ -51,6 +51,7 @@ export default function Page() {
             <div>
               <h3>{item.name}</h3>
               {/* {item.section.map((section) => `${section.name}`)} */}
+              <h3>{item.desc}</h3>
             </div>
           ))}
 
