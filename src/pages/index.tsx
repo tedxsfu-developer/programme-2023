@@ -1,11 +1,7 @@
-import localFont from "next/font/local";
 import { program, programAfternoon, lunch } from "@/data/ProgramData";
 import Header from "@/components/layout/Header";
 import LunchActivity from "@/components/LunchActivity";
 import ProgramItem from "@/components/ProgramItem";
-import Link from "next/link";
-import Sponsors from "@/components/layout/Sponsors";
-import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
