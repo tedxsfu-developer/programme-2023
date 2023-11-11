@@ -62,7 +62,7 @@ export default function Home() {
 
         <h2 className="text-ted-grey pb-1.5">Morning Session</h2>
 
-        <section className="z-10 max-w-5xl w-full text-body font-normal">
+        <section className="z-10 w-full text-body font-normal">
           {/* -----Morning Session section----- */}
 
           <div className="pb-10">
