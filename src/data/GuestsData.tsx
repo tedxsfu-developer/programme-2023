@@ -52,8 +52,8 @@ export const guestData = [
     href: "kurt",
     section: [
       {
-        name: "Kurt",
-        desc: "The Violinist",
+        name: "Kurt the Violinist",
+        desc: "Musician and TikTok star",
         image: "/guests/kurt-headshot.png",
         info: "Clutching his violin and brimming with boundless talent, Kurt is an extraordinary musician captivating the hearts of his audience. Through his inventive performances, he defies the constraints of traditional genres, infusing each note with his personal artisty. His videos showcase not only his virtuosity but also his genuine love for the violin, creating a magnetic connection with viewers.  Kurt's dedication to classical beauty fused with contemporary creativity stands out, making him a sensation on TikTok. His journey exemplifies the power of artistry and innovation, attributing to his success as a one-of-a-kind musician.",
       },
@@ -67,13 +67,13 @@ export const guestData = [
     section: [
       {
         name: "Rob Roy Mackenzie",
-        desc: "Former Major General",
+        desc: "Major General Retired",
         image: "/guests/rob-headshot.png",
         info: "In 2000, Major-General MacKenzie joined the Army Reserves and Seaforth Highlanders of Canada, rising to Lieutenant-Colonel by 2005. He then transitioned to the Vancouver Police Department, serving in various roles, including Emergency Response during the 2010 Olympics. His military career includes commanding the Seaforth Highlanders and deployments to Afghanistan in 2009 and 2010-2011. Promoted to Brigadier-General in 2013, he held key roles, eventually becoming Chief of Reserves for the Canadian Armed Forces in 2019. MacKenzie is a decorated graduate of several military programs, receiving honors such as the Officer of the Order of Military Merit.",
       },
       {
         name: "Kelsie Sheren",
-        href: "kelsie",
+        // href: "kelsie",
         desc: "Decorated Veteran",
         image: "/guests/kelsie-headshot.png",
         info: "Kelsie, CEO of Brass & Unity and author of 'Brass and Unity, One Woman’s Journey Through the Hell of Afghanistan and Back', is a formidable Canadian veteran who served across Canadian, American, and British military forces as an Artillery Gunner & CST in 2009 in Afghanistan. Following her intense Afghan tour, Kelsi confronted her own battles, diagnosed with PTSD & TBI, but she discovered solace in art therapy, ingeniously crafting jewelry from spent bullet casings. This birthed Brass & Unity, a renowned jewelry and eyewear brand, channeling 20% of net profits to aid veterans grappling with PTSD, depression, anxiety, and suicide. Notably nominated for prestigious awards, the brand found favor among celebrities like Kevin Hart, Ellen, Michael Buble, and Julianne Hough, and received widespread media coverage. Kelsi's impactful journey sparked the creation of the Brass & Unity Podcast, a top-ranked global show delving into mental health and extraordinary stories of resilience, featuring acclaimed individuals from various domains. Committed to aiding veterans, Brass & Unity significantly contributed to multiple veterans' charities and initiatives, amplifying their impact through a cascade of donations and partnerships. The convergence of Kelsi's inspiring book release, upcoming film adaptation, and her alliance with Support Our Troops and Boot Campaign underscores her relentless dedication to veterans' well-being, solidifying her legacy as a force for positive change.",

@@ -41,8 +41,8 @@ export default function Page() {
 
   return (
     <main className=" min-h-screen bg-black text-white p-3 overflow-auto">
-      <Header></Header>
-      <ReturnButton></ReturnButton>
+      <Header />
+      <ReturnButton />
       <div className="grid grid-flow-col z-10 w-full justify-between items-center border-b pb-2 border-ted-grey">
         <div className="font-light text-name">
           {/* {guest ? guest.groupname : ""} */}
@@ -51,7 +51,7 @@ export default function Page() {
             <div>
               <h3>{item.name}</h3>
               {/* {item.section.map((section) => `${section.name}`)} */}
-              <h3>{item.desc}</h3>
+              <h4>{item.desc}</h4>
             </div>
           ))}
 
