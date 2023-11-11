@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header";
 import LunchActivity from "@/components/LunchActivity";
 import ProgramItem from "@/components/ProgramItem";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -36,7 +37,6 @@ export default function Home() {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:domain"
@@ -58,6 +58,15 @@ export default function Home() {
       </Head>
       <main className={`min-h-screen p-3 text-white bg-black`}>
         <Header />
+        <div className="fixed bottom-6 right-0">
+          <Link
+            href="/faq"
+            className="mb-0 mr-4 bg-white text-black px-2 py-2 rounded-md"
+          >
+            FAQ
+          </Link>
+        </div>
+
         {/* <Link href="/faq">FAQ</Link> */}
 
         <h2 className="text-ted-grey pb-1.5">Morning Session</h2>

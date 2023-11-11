@@ -19,12 +19,12 @@ function ProgramItem(items: Props) {
       className={items.href ? "" : "pointer-events-none"}
     >
       <div className="grid grid-cols-3 py-1.5 font-normal border-ted-grey border-t">
-        <h6 className="text-ted-grey">{items.time}</h6>
+        <h6 className="text-ted-grey leading-5">{items.time}</h6>
         <div className="flex flex-row col-span-2">
           <div className="flex flex-col">
             {items.desc.map((e, index) => (
-              <div className="w-full" key={index}>
-                <div className="w-full">{e}</div>
+              <div className="w-full">
+                <div className="w-full leading-5">{e}</div>
                 <div className="text-caption text-ted-grey pb-1.5">
                   {items.guest ? items.guest[index] : <></>}
                 </div>

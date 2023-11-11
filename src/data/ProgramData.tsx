@@ -8,7 +8,7 @@ export const program = [
     time: "10:00",
     desc: ["Land Acknowledgment", "Performance"],
     guest: ["Carleen Thomas", "M'Girl"],
-    href: "/guests/mgirl",
+    // href: "/guests/mgirl",
   },
   {
     time: "10:20",
@@ -25,7 +25,7 @@ export const program = [
     time: "11:00",
     desc: ["Remembrance Day"],
     guest: ["Honour House Society"],
-    href: "/guests/honourhousessociety",
+    // href: "/guests/honourhousessociety",
   },
   {
     time: "11:20",
@@ -37,7 +37,7 @@ export const program = [
     time: "11:40",
     desc: ["Laughter Yoga"],
     guest: ["Ven Virah"],
-    href: "/guests/laughteryoga",
+    // href: "/guests/laughteryoga",
   },
   {
     time: "11:50",
@@ -55,7 +55,7 @@ export const program = [
     time: "12:50",
     desc: ["Unmasking the Violin"],
     guest: ["Kurt the Violinist"],
-    href: "/guests/kurt",
+    // href: "/guests/kurt",
   },
 ];
 
@@ -64,7 +64,7 @@ export const programAfternoon = [
     time: "15:00",
     desc: ["Unmasking Dance"],
     guest: ["Trek of Arts"],
-    href: "/guests/trekofarts",
+    // href: "/guests/trekofarts",
   },
   {
     time: "15:20",
