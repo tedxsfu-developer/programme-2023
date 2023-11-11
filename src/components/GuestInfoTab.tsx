@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { Fragment } from "react";
-import { guestData } from "@/data/GuestsData";
 
 export default function GuestInfoTab() {
   //   const [activeTabIndex, setActiveTabIndex] = useState(0);
@@ -13,9 +12,6 @@ export default function GuestInfoTab() {
   //   const tabsRef = useRef([]);
   const [tab, setTab] = useState("info");
   const pathname = usePathname();
-  const guest = guestData.find(
-    (p) => "/guests/" + p.href.toString() === pathname
-  );
 
   return (
     <div>
@@ -34,7 +30,7 @@ export default function GuestInfoTab() {
       <div className="font-light text-headline">
         {tab == "info" && (
           <div>
-            <p className="pt-2 text-body font-normal">{guest.info}</p>
+            <p className="pt-2 text-body font-normal">{"info"}</p>
           </div>
         )}
       </div>

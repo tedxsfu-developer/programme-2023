@@ -1,12 +1,12 @@
 export const guestData = [
-  //CARLEEN THOMAS
-  {
-    name: "Carleen Thomas",
-    href: "carleen",
-    desc: "Tsleil-Watsuth Nation",
-    image: "/guests/carleen-headshot.png",
-    info: [{}],
-  },
+  // //CARLEEN THOMAS
+  // {
+  //   name: "Carleen Thomas",
+  //   href: "carleen",
+  //   desc: "Tsleil-Watsuth Nation",
+  //   image: "/guests/carleen-headshot.png",
+  //   info: [{}],
+  // },
 
   {
     groupname: "M'Girl",
@@ -91,7 +91,6 @@ export const guestData = [
         href: "trekofarts",
         desc: "Dance Community",
         image: "/guests/trekofarts-headshot.png",
-        links: "",
         info: "Trek of Arts (TOA) is all about nurturing your artistic potential. Whether you're a seasoned artist or just starting your creative journey, they invite everyone to explore and discover their unique artistry, spanning movement, music, design, voice, and more. Art is a huge part of life.  It's a necessary part of life.",
       },
     ],
@@ -106,7 +105,6 @@ export const guestData = [
         name: "Ven Virah",
         desc: "Motivational Speaker",
         image: "/guests/ven-headshot.png",
-        links: "",
         info: "Ven Virah is an award-winning motivational speaker, a global corporate director, and an MBA student at SFU. In these roles, Ven brings people together, empowers them to feel alive, and encourages them to think differently. As a certified laughter yoga instructor, Ven has received raving reviews for successfully lifting the energy in academic, public, and corporate environments. Today, Ven will unmask the magic of laughter! Get ready to laugh like you’ve never laughed before! Ven will initiate laughter exercises where you will laugh without relying on humour, jokes, or comedy. Ven will also draw on storytelling and breathwork to invoke your expression and imagination. Within minutes, you will reclaim joy, release stress, and truly feel the present moment.",
       },
     ],

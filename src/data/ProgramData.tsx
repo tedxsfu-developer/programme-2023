@@ -8,7 +8,7 @@ export const program = [
     time: "10:00",
     desc: ["Land Acknowledgment", "Performance"],
     guest: ["Carleen Thomas", "M'Girl"],
-    href: "/guests/mgirl-carleen",
+    href: "/guests/mgirl",
   },
   {
     time: "10:20",
