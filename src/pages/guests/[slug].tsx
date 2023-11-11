@@ -35,8 +35,9 @@ export default function Page() {
   const guest = guestData.find(
     (p: any) => "/guests/" + p.href.toString() === pathname
   );
+  console.log(guest);
   const [tab, setTab] = useState("info");
-  const images = guest?.section.info;
+  // const images = guest?.section.info;
 
   return (
     <main className=" min-h-screen bg-black text-white p-3 overflow-auto">
@@ -44,15 +45,20 @@ export default function Page() {
       <ReturnButton></ReturnButton>
       <div className="grid grid-flow-col z-10 w-full justify-between items-center border-b pb-2 border-ted-grey">
         <div className="font-light text-name">
-          {guest ? guest.groupname : ""}
-        </div>
-        {/* <div className="text-sm text-ted-grey capitalize font-normal">
-          {guest ? guest.desc : ""}
-        </div> */}
-      </div>
-      <GuestInfoTab></GuestInfoTab>
+          {/* {guest ? guest.groupname : ""} */}
 
-      {/* <div className="grid grid-flow-col z-10 w-full justify-between items-center border-b pb-2 border-ted-grey">
+          {guest?.section.map((item) => (
+            <div>
+              <h3>{item.name}</h3>
+              {/* {item.section.map((section) => `${section.name}`)} */}
+            </div>
+          ))}
+
+          {/* {guest?.section((item) => `${item.name} ${item.info}`)} */}
+        </div>
+
+        <GuestInfoTab></GuestInfoTab>
+        {/* <div className="grid grid-flow-col z-10 w-full justify-between items-center border-b pb-2 border-ted-grey">
         <div className="font-light text-name">
           {guest ? guest.groupname : ""}
         </div>
@@ -61,17 +67,18 @@ export default function Page() {
           {guest ? guest.section.info : ""}
         </div>
       </div> */}
-      {/* <Carousel />
+        {/* <Carousel />
 
       <GuestInfoTab /> */}
 
-      {/* <div className="my-[30px]">
+        {/* <div className="my-[30px]">
         <InstagramButton instagram={speaker?.instagram}></InstagramButton>
       </div> */}
-      {/* <div className="my-[30px]">
+        {/* <div className="my-[30px]">
         <CTAButton links={speaker?.links}></CTAButton>
       </div>
       <div></div> */}
+      </div>
     </main>
   );
 }
