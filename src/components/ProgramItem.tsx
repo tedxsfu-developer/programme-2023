@@ -23,7 +23,7 @@ function ProgramItem(items: Props) {
         <div className="flex flex-row col-span-2">
           <div className="flex flex-col">
             {items.desc.map((e, index) => (
-              <div className="w-full">
+              <div className="w-full" key={index}>
                 <div className="w-full leading-5">{e}</div>
                 <div className="text-caption text-ted-grey pb-1.5">
                   {items.guest ? items.guest[index] : <></>}

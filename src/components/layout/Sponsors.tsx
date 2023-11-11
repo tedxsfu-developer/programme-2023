@@ -15,6 +15,7 @@ export default function Sponsors(items: Props) {
       <div className="grid grid-cols-3 pb-24 gap-4 items-center">
         {sponsors.map((e, index) => (
           <div
+            key={index}
             className={`justify-self-center my-2 p-4 ${
               index === sponsors.length - 1 && "col-span-3"
             }`}

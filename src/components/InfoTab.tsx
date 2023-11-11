@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Fragment } from "react";
 import InstagramButton from "./button/InstagramButton";
 import CTAButton from "./button/CTAButton";
+import React from "react";
 
 export default function InfoTab() {
   const [tab, setTab] = useState("info");
@@ -40,7 +41,7 @@ export default function InfoTab() {
         {tab == "info" && (
           <div>
             {speaker?.info?.map((item, index) => (
-              <>
+              <React.Fragment key={index}>
                 <h3 className="pt-2 text-headline font-light">
                   {item.headline}
                 </h3>
@@ -53,7 +54,7 @@ export default function InfoTab() {
                 <div className="my-[30px]">
                   <CTAButton links={speaker?.links}></CTAButton>
                 </div>
-              </>
+              </React.Fragment>
             ))}
           </div>
         )}
@@ -62,12 +63,12 @@ export default function InfoTab() {
         {tab == "qa" && (
           <div>
             {speaker?.qa?.map((item, index) => (
-              <>
+              <React.Fragment key={index}>
                 <p className="text-ted-grey pt-3 text-sm font-medium normal-case tracking-normal">
                   {item.question}
                 </p>
                 <p className="pt-3 text-body font-normal">{item.answer}</p>
-              </>
+              </React.Fragment>
             ))}
           </div>
         )}
