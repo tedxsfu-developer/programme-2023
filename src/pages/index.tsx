@@ -85,8 +85,8 @@ export default function Home() {
             13:00 &ndash; 15:00
           </div>
           <div className="text-body pb-8">
-            We’ve prepared a roster of activities for you during lunch hour to
-            spend.
+            We’ve prepared a whole list of activities for you during lunch hour
+            to spend with friends, both new and old!
           </div>
           {lunch.map((items, index) => (
             <LunchActivity
@@ -110,9 +110,6 @@ export default function Home() {
             />
           ))}
         </section>
-        <h4 className="tracking-normal normal-case text-ted-grey font-sm">
-          *Schedule subject to change
-        </h4>
         {/* <Sponsors></Sponsors> */}
         {/* <Footer></Footer> */}
       </main>
