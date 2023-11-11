@@ -63,9 +63,9 @@ export default function FAQ() {
         <div className="py-1">
           <Collapsible trigger="Are photography and recording allowed during the talks?">
             <p>
-              Photography and recording are not allowed during the speakers'
-              talks. However, official event photographers will capture key
-              moments.
+              Photography and recording are not allowed during the
+              speakers&apos;talks. However, official event photographers will
+              capture key moments.
             </p>
           </Collapsible>
         </div>
@@ -85,7 +85,7 @@ export default function FAQ() {
               carpooling!
               <br></br>Parking is available at: <br></br>
               <ul>
-                <li>L'Hermitage (Impark Lot #2263)</li>
+                <li>L&apos;Hermitage (Impark Lot #2263)</li>
                 <li>Telus Garden (Advanced Parking Lot #9160)</li>
               </ul>
             </p>
