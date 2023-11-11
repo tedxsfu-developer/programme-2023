@@ -97,7 +97,7 @@ export const programAfternoon = [
   },
   {
     time: "17:00",
-    desc: ["Data Research Activity"],
+    desc: ["Let Us Know You're Here!"],
     guest: [""],
   },
   {

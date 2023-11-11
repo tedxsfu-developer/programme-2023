@@ -70,33 +70,29 @@ export const speakerData = [
     qa: [
       {
         // QUESTION 1
-        question: "CHANGE THIS ----",
+        question: "What’s your idea worth spreading?",
         answer:
-          "Well, I am excited about sharing my ideas with such large audiences, connecting my ideas with the ideas of other speakers because I see there are a lot of things that are common. And it’s great to inspire people and this might actually be the seed of change that will inspire larger audiences when they see it. It’s good to be part of change and innovation.",
+          "My idea worth spreading is that poetry is a form of resistance. Meaning that for those who’ve always felt silenced or struck down, and felt  they were not able to talk or express themselves, even talk about a certain issue that affects them. Through poetry they can freely do that and creatively do that and be heard and give plaudit.",
       },
       {
         // QUESTION 2
-        question: "What was the best piece of advice you’ve gotten?",
+        question:
+          "If you could share a meal with any four individuals, living or dead, who would they be?",
         answer:
-          "I guess the best advice that I received in my life is that failures are learning curves, and that we should not shy of failing. And actually, I think there should be a university course just “failing 101”. Because I guess in my practice, I did everything just by failing. Don’t be afraid to fail is a really good advice I got.",
+          "So four individuals? Okay, Maya Angelou definitely, Malcolm X, Oprah! The fourth one would be maybe an ancestor, Yea! That’d be cool.",
       },
       {
         // QUESTION 3
-        question: "What is your biggest inspiration?",
+        question:
+          "If you could choose to do anything for a date what would it be? No limitations of any sort.",
         answer:
-          "Well, for sure my biggest inspiration is nature. I mean like if you look at nature, all the solutions to our problems are there. We’re just kind of not looking close, so when I started to work with algae, it was really insane to see how they are actually already solving a lot of problems. And there are actually a model blueprints for our societies of equality and inclusion, and if we apply that to ourselves and our human society, we would be much better off. Plus we are kind of communicating but it’s invisible so we’ve forgotten about that, and now we are bringing this to the surface. So I would say definitely, nature and kind of tiny microorganisms.",
+          "I would go to the lake and go swimming, and just like have a picnic with music.",
       },
       {
         // QUESTION 4
-        question: "What was an important life lesson for you?",
+        question: "What would you sing at Karaoke night",
         answer:
-          "Well, I should say that kind of taps into the failures one, persistence. Like I do say that I moved to Toronto just before the pandemic, so I could have wrapped everything up and just returned back to gracious. So an important life lesson is just maybe when you have a vision of something and intuitively you know you're doing something right. It’s just not to give up and just to follow that goal. I mean that kind of tapping to all other conversations as well. So I would say like a persistence would be great. Because four years ago, I didn’t have an exhibition, I didn’t have a tedx talk and stuff, I was just kind of doing my stuff, and it worked!",
-      },
-      {
-        // QUESTION 5
-        question: "What motivates you?",
-        answer:
-          "Actually what motivates me is I guess I was just kind of born a little bit energized so I just do stuff. But deeply what motivates me is, I am lacking a connection with my ancestors. So through doing arts and through kind of diving, I am reconnecting with my cultures and with my ancestors. That’s a really important part for me, remembering who I am and where I come from. And then from that, what motivates me is creating better futures, starting with myself. throughout my past, and then maybe better futures for everybody. So that’s kind of a good motivation. So basically I just want people to feel appreciated to have a space where they can be seen and heard, where they can be included in conversations, and just spaces with fresh oxygen, that kind of fires up your brain and we can all do wonders.",
+          "I would sing all the Beyonce jams, Mariah Carrey, Taylor Swift, Rihanna, basically.",
       },
     ],
   },
@@ -166,29 +162,33 @@ export const speakerData = [
     ],
     qa: [
       {
-        question: "CHANGE THIS",
+        question: "What’s your idea worth spreading?",
         answer:
-          "My idea worth spreading is this idea that ADHD nowadays is being perceived as trendy or like the next big thing, but really what’s actually happening is that we’re seeing a generation unmasking for the first time.",
+          "I’m going be talking about everything AI. What these systems are, how these machine learning models reaches their specific application of AI working, and what we all as part of the society need to do in order to have a better successful community with AI and generative AI.",
       },
       {
         //QUESTION 2
-        question:
-          "What form of public transportation do you prefer? Air, boat, train, bus, car",
+        question: "What kind of music do you like to listen to?",
         answer:
-          "Yacht? I don’t know. If I had that as an option. Pick that. Not very environmentally friendly but badass.",
+          "I like classical. I like to listen to classical music and also I  play some sort of classical guitar, I’m also starting to play classical pianos",
       },
       {
         //QUESTION 3
-        question:
-          "Three things you chose to be stranded with on a desert island?",
+        question: "What motivates you to work hard?",
         answer:
-          "Uh, really good question, and uh first off a boat. Not a bad option. Um, and then at that point we’re set so lets say like tiramisu, um and a cocktail!",
+          "I think it’s important is to believe in what you can achieve with your knowledge and your perspective because at the end of the day, you are you, and you’re bringing a lot of different aspects of things for that specific work that you do into the picture and believing yourself, believing in what the future would look like would keep me going, and I like to achieve that faster so I work harder and I’m so motivated to achieve that as soon as I can.",
       },
       {
         //QUESTION 4
-        question: "What’s the most unusual thing you’ve ever eaten?",
+        question: "What was the last book you read?",
         answer:
-          "I had chicken hearts once, this and then I became a vegetarian.",
+          "Yea one thing about me is that I like to have multiple books, for me it’s audiobooks, going on. So I start on one, I continue maybe to the second chapter, then I move onto another one and I keep going back and forth. But, The book that I would like to share would be “Think Like a Monk” its by Jay Shetty. The reason I like that book, is that it tells you the principles of how monks live, and so I think it’s quite the contrary to how someone in tech would live. We are so much used to material possessions and that book teaches you ways to just, you know, not be thinking much about what you do at work especially, what your title is, what techniques, you know. Instead have gratitude towards the real you. There’s a lot of y'know all of us we’re multi dimensional creatures, and we shouldn’t be only defined by what we do at work, what our job is, and I think that book has been really important to say that.",
+      },
+      {
+        //QUESTION 4
+        question: "Do you collect anything?",
+        answer:
+          "Yea! Actually, related to the previous question. Whenever I travel, I love to take a look at historical places, beautiful things that the city,  the place is known for, and then get a souvenir for myself. So I have a big collection of all these souvenirs from all these different parts of the world. They remind me of the little moments of the time that I spent in that particular city, country.",
       },
     ],
   },

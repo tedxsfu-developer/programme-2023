@@ -3,36 +3,29 @@
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { Fragment } from "react";
+import { guestData } from "@/data/GuestsData";
 
 export default function GuestInfoTab() {
-  //   const [activeTabIndex, setActiveTabIndex] = useState(0);
-  //   const [tabUnderlineWidth, setTabUnderlineWidth] = useState(0);
-  //   const [tabUnderlineLeft, setTabUnderlineleft] = useState(0);
-
-  //   const tabsRef = useRef([]);
   const [tab, setTab] = useState("info");
   const pathname = usePathname();
+  const guest = guestData;
 
   return (
     <div>
       <div className="flex pt-6 space-x-3 border-b border-ted-grey">
-        <button
-          onClick={(e) => {
-            setTab("info");
-          }}
-          className={`pb-2 uppercase text-caption border-white ${
-            tab == "info" ? "border-b" : "border-none"
-          }`}
-        >
-          Info
-        </button>
-      </div>
-      <div className="font-light text-headline">
-        {tab == "info" && (
-          <div>
-            <p className="pt-2 text-body font-normal">{"info"}</p>
-          </div>
-        )}
+        <div className="font-light text-headline">
+          {tab == "info" && (
+            <div>
+              {guest?.section?.map((item, index) => (
+                <>
+                  <h3 className="pt-2 text-headline font-light">{item.name}</h3>
+                  <p className="pt-2 text-body font-normal">{item.desc}</p>
+                  <p className="pt-3 text-body font-normal">{item.info}</p>
+                </>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

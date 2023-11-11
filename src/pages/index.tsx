@@ -4,7 +4,7 @@ import Header from "@/components/layout/Header";
 import LunchActivity from "@/components/LunchActivity";
 import ProgramItem from "@/components/ProgramItem";
 import Link from "next/link";
-import ImageGrid from "@/components/ImageGrid";
+import Sponsors from "@/components/layout/Sponsors";
 import Footer from "@/components/layout/Footer";
 
 // const helvetica = localFont({
@@ -96,9 +96,8 @@ export default function Home() {
       <h4 className="tracking-normal normal-case text-ted-grey font-sm">
         *Schedule subject to change
       </h4>
-      <div>
-        <Footer></Footer>
-      </div>
+      <Sponsors></Sponsors>
+      <Footer></Footer>
     </main>
   );
 }

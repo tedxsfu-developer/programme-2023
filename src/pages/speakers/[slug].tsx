@@ -17,6 +17,7 @@ import InstagramButton from "@/components/button/InstagramButton";
 import CTAButton from "@/components/button/CTAButton";
 import ImageLayout from "@/components/layout/ImageLayout";
 import { useState } from "react";
+import Footer from "@/components/layout/Footer";
 
 export const getStaticPaths = async () => {
   const paths = speakerData.map((items) => ({
@@ -55,8 +56,6 @@ export default function Page() {
       <Header />
       <ReturnButton />
 
-      {/* <div>{pathname}</div> */}
-      {/* <div>{speaker ? speaker.href : ""}</div> */}
       <div className="grid grid-flow-col z-10 w-full justify-between items-center border-b pb-2 border-ted-grey">
         <div className="font-light text-name">
           {speaker ? speaker.name : ""}
@@ -68,13 +67,8 @@ export default function Page() {
       <ImageLayout image={speaker ? speaker.image : ""} />
 
       <InfoTab />
+      <Footer></Footer>
 
-      <div className="my-[30px]">
-        <InstagramButton instagram={speaker?.instagram}></InstagramButton>
-      </div>
-      <div className="my-[30px]">
-        <CTAButton links={speaker?.links}></CTAButton>
-      </div>
       <div></div>
     </main>
   );

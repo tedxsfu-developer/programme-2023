@@ -4,13 +4,10 @@ import { speakerData } from "@/data/SpeakerData";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { Fragment } from "react";
+import InstagramButton from "./button/InstagramButton";
+import CTAButton from "./button/CTAButton";
 
 export default function InfoTab() {
-  //   const [activeTabIndex, setActiveTabIndex] = useState(0);
-  //   const [tabUnderlineWidth, setTabUnderlineWidth] = useState(0);
-  //   const [tabUnderlineLeft, setTabUnderlineleft] = useState(0);
-
-  //   const tabsRef = useRef([]);
   const [tab, setTab] = useState("info");
   const pathname = usePathname();
   const speaker = speakerData.find(
@@ -49,6 +46,14 @@ export default function InfoTab() {
                 </h3>
                 <p className="pt-2 text-body font-normal">{item.body}</p>
                 <p className="pt-3 text-body font-normal">{item.body2}</p>
+                <div className="my-[30px]">
+                  <InstagramButton
+                    instagram={speaker?.instagram}
+                  ></InstagramButton>
+                </div>
+                <div className="my-[30px]">
+                  <CTAButton links={speaker?.links}></CTAButton>
+                </div>
               </>
             ))}
           </div>

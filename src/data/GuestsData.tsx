@@ -67,7 +67,6 @@ export const guestData = [
     section: [
       {
         name: "Rob Roy Mackenzie",
-        href: "rob",
         desc: "Former Major General",
         image: "/guests/rob-headshot.png",
         info: "In 2000, Major-General MacKenzie joined the Army Reserves and Seaforth Highlanders of Canada, rising to Lieutenant-Colonel by 2005. He then transitioned to the Vancouver Police Department, serving in various roles, including Emergency Response during the 2010 Olympics. His military career includes commanding the Seaforth Highlanders and deployments to Afghanistan in 2009 and 2010-2011. Promoted to Brigadier-General in 2013, he held key roles, eventually becoming Chief of Reserves for the Canadian Armed Forces in 2019. MacKenzie is a decorated graduate of several military programs, receiving honors such as the Officer of the Order of Military Merit.",
@@ -85,10 +84,10 @@ export const guestData = [
   //TREK OF ARTS
   {
     groupname: "Trek of Arts",
+    href: "trekofarts",
     section: [
       {
         name: "Trek of Arts",
-        href: "trekofarts",
         desc: "Dance Community",
         image: "/guests/trekofarts-headshot.png",
         info: "Trek of Arts (TOA) is all about nurturing your artistic potential. Whether you're a seasoned artist or just starting your creative journey, they invite everyone to explore and discover their unique artistry, spanning movement, music, design, voice, and more. Art is a huge part of life.  It's a necessary part of life.",
