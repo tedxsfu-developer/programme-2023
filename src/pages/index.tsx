@@ -81,7 +81,7 @@ export default function Home() {
                 time={items.time}
                 desc={items.desc}
                 guest={items.guest}
-                // href={items.href}
+                href={items.href}
               />
             ))}
           </div>
@@ -116,6 +116,7 @@ export default function Home() {
               time={items.time}
               desc={items.desc}
               guest={items.guest}
+              href={items.href}
             />
           ))}
         </section>
