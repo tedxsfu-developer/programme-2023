@@ -84,24 +84,24 @@ export const programAfternoon = [
   //   guest: ["TBD"],
   // },
   {
-    time: "16:20",
+    time: "16:00",
     desc: ["Life Beyond the Dead Man's Curve"],
     guest: ["Chris Wilson"],
     href: "/speakers/chris",
   },
   {
-    time: "16:40",
+    time: "16:20",
     desc: ["Mastering Failure"],
     guest: ["Micky Papa"],
     href: "/speakers/micky",
   },
   {
-    time: "17:00",
+    time: "16:40",
     desc: ["A Toast to Ideas Worth Spreading"],
     guest: ["Noel Bentley"],
   },
   {
-    time: "17:30",
+    time: "17:00",
     desc: ["End of Program"],
     guest: [""],
   },
